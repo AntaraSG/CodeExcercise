@@ -1,0 +1,27 @@
+﻿@model CodingExcrcise.Models.Pollution
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Pollution</title>
+</head>
+<body>
+    <div>
+        <h4>Pollution</h4>
+        <hr />
+
+        @if (Model == null) {
+    <label class="col-md-2">No record found.</label>
+        }
+    </div>
+    <p>
+        @Html.ActionLink("Back to search", "Index")
+    </p>
+</body>
+</html>
